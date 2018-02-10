@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <jmxConfigurator/>
+
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%file:%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.navercorp" level="DEBUG"/>
+
+    <root level="DEBUG">
+        <appender-ref ref="consoleAppender"/>
+    </root>
+</configuration>
